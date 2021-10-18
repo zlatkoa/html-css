@@ -1,0 +1,71 @@
+body {
+  background-image: url("slika.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.paragraphs {
+  display: inline-block;
+  position: relative;
+}
+
+.align-left {
+  left: 100px;
+}
+
+.align-right {
+  right: 100px;
+}
+
+.container {
+  height: 200px;
+  width: 300px;
+  overflow: auto;
+}
+
+.container > .fixed-menu {
+  position: fixed;
+  opacity: 0.5;
+}
+
+.link {
+  text-decoration: none;
+  color: darkslategrey;
+  font-weight: bold;
+  padding: 2px;
+  border: 1px solid darkslategrey;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 1px 5px 5px darkslategrey;
+}
+
+/* Pseudo- classes */
+.link:hover {
+  background-color: darkslategrey;
+  color: black;
+}
+
+.link::before {
+
+}
+
+.link::after {
+  content: "Go back home";
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: darkslategrey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
