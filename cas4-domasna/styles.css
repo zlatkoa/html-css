@@ -8,7 +8,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;  
+    flex-direction: row;
+    flex-wrap: wrap;  
 }
 .flex-column{
     display: flex;
@@ -38,6 +39,12 @@ img{
     display: block;
     border-radius: 100%;
     position: absolute;
+}
+img:hover{
+    height: 160px;   
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 9.6px 23.04px 0px;
 }
 .online-status{
     width:20px;
@@ -77,8 +84,8 @@ p{
     margin-top:20px;
     margin-bottom: 40px;
     font-size: 1.2rem;
-
 }
+
 .hash-box{
     margin:5px;
     padding-left: 10px;
@@ -88,6 +95,11 @@ p{
     background-color: #F0F8FF;
     border-radius:5px;
     color:grey;
+}
+
+.hash-box:hover{
+    background-color: #1E90FF;
+    color: white;
 }
 .button-container{
     padding-left: 20px;
