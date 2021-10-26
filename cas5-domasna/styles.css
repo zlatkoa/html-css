@@ -1,0 +1,190 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: tomato;
+}
+h2, p{
+    color:grey;
+}
+
+p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;  
+
+}
+.flex-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+
+}
+/*Main container which conatins all flex elements on white background no flex*/
+.container{
+    height: auto;
+    padding:10px;
+    background-color: white;
+    margin:1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 9.6px 23.04px 0px;
+    border-radius: 10px;
+}
+/*Main flex container devides the content in two main columns*/
+.wraper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    padding: 0;
+    margin: 0; 
+}
+
+.person-id{
+    height:  auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+.profile-picture{
+    height: 200px;
+    width:  200px;
+    margin-bottom: 20px; 
+}
+.picture{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 100%;
+}
+.online-status{
+    width:20px;
+    height:20px;
+    border-radius: 100%;
+    background-color: limegreen;
+    border-color: white;
+    border-style: solid;
+    border-width: 6px;
+    position:relative;
+    bottom:-160px;
+    right:-160px;
+}
+.button-container{
+   width: 80%;
+}
+button{
+    width:100%;
+    height:50px;
+    margin-bottom:20px;
+    border:none;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: tomato;
+    color:white;
+}
+.button-follow{
+    background-color: #1E90FF; 
+    color: white
+}
+.profile-data{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.text{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.text-bio{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: grey;
+
+}
+
+.hashtags{
+    margin-top:20px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.hash-box{
+    margin:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:5px;
+    padding-bottom :5px;
+    background-color: #F0F8FF;
+    border-radius:5px;
+    color:grey;
+}
+
+.hash-box:hover{
+    background-color: #1E90FF;
+    color: white;
+}
+
+
+/*css for mobile phones and small devices with screen size less than 768px */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* css for tablet resolutions (768 <= rezolucija <= 1024)*/
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  
+
+}
+ 
+/* css for computer monitor from HD to 4K resolution*/
+@media only screen and (min-width: 1280px) and (max-width: 2159px) {
+.wraper{
+    justify-content: center;
+    flex-direction: row;   
+    padding: 0;
+    margin: 0; 
+}
+.person-id{
+    height:  auto;
+    width:  100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+
+
+
+
+}
+
+/* css for computer monitor from 4k above */
+@media only screen and (min-width: 2160px) {
+}

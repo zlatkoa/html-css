@@ -1,0 +1,166 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+	background-color: tomato;
+}
+
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:  wrap;  
+}
+
+.flex-column{
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;  
+}
+
+.wraper{   
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    width: 460px;
+    height: 740px;
+    padding:0px;
+    background-color: white;
+    margin:1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 9.6px 23.04px 0px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.top-menu{
+	height: 74px;
+	background-color: #00cc66;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+}
+.top-menu-left:hover{
+    color:tomato;
+ }
+
+.top-menu-left{
+	font-weight: 500;
+	font-size: 1.4rem;
+	width: 50%;
+
+}
+.top-menu-right{
+	font-size: 1rem;
+	width: 40%;
+	text-align: right;	
+}
+
+.arrow-icon{
+	padding-right: 20px;
+}
+
+img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+img:hover{
+    height: 160px;   
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 9.6px 23.04px 0px;
+}
+
+.profile-picture{
+	margin-top: 100px;
+}
+
+.profile-picture p{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.profile-data{
+	margin: 0;
+}
+
+.profile-role{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.line-divider{
+	border-top: 1px;
+	color: lightgray;
+	width: 400px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.data-table{
+	padding: 10px;
+}
+
+.data-table-left-column{
+	text-align: right;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	width: 160px;
+	vertical-align: top;
+	font-weight: bold;
+	color: black;
+}
+
+.data-table-right-column{
+	text-align: left;
+	padding-left: 10px;
+	widdth: 300px;
+	vertical-align: top;
+	color: grey;
+}
+
+.data-table-role{
+	margin-top: 10px;
+	color: grey;
+}
+
+.data-table-role-left-column{
+	width: 50%;
+	text-align: left;
+	vertical-align: top;
+}
+
+.data-table-role-right-column{
+	width: 50%;
+	text-align: left;
+	vertical-align: top;
+}
+
+th {
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
