@@ -12,21 +12,7 @@ p{
     font-size: 1.4rem;
     line-height: 1.4;
 }
-.flex-row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;  
 
-}
-.flex-column{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; 
-
-}
 /*Main container which conatins all flex elements on white background no flex*/
 .container{
     height: auto;
@@ -46,12 +32,17 @@ p{
 }
 
 .person-id{
-    height:  auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-
+    padding: 20px;
+}
+.person-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
 }
 .profile-picture{
     height: 200px;
@@ -79,7 +70,7 @@ p{
     right:-160px;
 }
 .button-container{
-   width: 80%;
+   width: 100%;
 }
 button{
     width:100%;
@@ -98,13 +89,10 @@ button:hover{
     background-color: #1E90FF; 
     color: white
 }
+
 .profile-data{
     padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; 
+    padding-right: 20px; 
 }
 
 .text{
@@ -157,34 +145,78 @@ button:hover{
 
 /* css for tablet resolutions (768 <= rezolucija <= 1024)*/
 @media only screen and (min-width: 769px) and (max-width: 1279px) {
-  
-
+    .wraper{
+        justify-content: center;
+        flex-direction: row;   
+        padding: 0;
+        margin: 0; 
+    }
+    .person-id{
+        height:  auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 40%;    
+    }
+    .person-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        width:60%;
+    }
 }
  
 /* css for computer monitor from HD to 4K resolution*/
 @media only screen and (min-width: 1280px) and (max-width: 2159px) {
-.wraper{
-    justify-content: center;
-    flex-direction: row;   
-    padding: 0;
-    margin: 0; 
-}
-.person-id{
-    height:  auto;
-    width:  100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-
-}
-
-
-
-
-
+    .wraper{
+        justify-content: center;
+        flex-direction: row;   
+        padding: 0;
+        margin: 0; 
+    }
+    .person-id{
+        height:  auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 30%;    
+    }
+    .person-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        width:70%;
+    }
 }
 
 /* css for computer monitor from 4k above */
 @media only screen and (min-width: 2160px) {
+    .wraper{
+        justify-content: center;
+        flex-direction: row;   
+        padding: 0;
+        margin: 0; 
+    }
+    .person-id{
+        height:  auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 30%;    
+    }
+    .person-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        width:70%;
+    }
+    .container{
+        width:1200px;
+    }
 }
