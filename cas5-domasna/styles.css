@@ -218,5 +218,6 @@ button:hover{
     }
     .container{
         width:1200px;
+        transition: width 300ms;
     }
 }
