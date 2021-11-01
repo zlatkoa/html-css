@@ -1,0 +1,168 @@
+ul {
+  list-style-type: none;
+}
+
+.kursevi > div {
+  padding: 10px;
+  border: 1px solid#f8f8f8;
+  min-width: 32%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 9.6px 23.04px 0px;
+  margin:0.5%;
+  margin-bottom:30px;
+}
+
+.kursevi >div:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 9.6px 23.04px 0px;
+  border: 1px solid#f8f8f8;
+  background-color: #dcdcdc;
+}
+.kursevi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.site-zaedno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#navigacija {
+  width: 20%;
+}
+
+.kursevi {
+  width: 80%;
+}
+
+.matematika{
+  height: 280px;
+}
+
+.fizika{
+  height: 300px;
+}
+
+.programiranje{
+  height: 200px;
+}
+
+.dizajn{
+  height: 250px;
+}
+
+.elektronika{
+  height: 100px;
+}
+
+.energetika{
+  height: 150px;
+}
+h2{
+  color: grey;
+}
+
+.kocka {
+  width: 50px;
+  background-color: cornflowerblue;
+}
+.kursevi_detalno{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  /* visibility:hidden; */
+  animation: 1s load;
+
+}
+
+/* .delay1{
+animation: load;
+animation-delay: 2s;
+} */
+
+/* @keyframes load{
+  {visibility: visible;}
+} */
+.image-container{
+  width: 100%;
+  height: 400px;
+}
+
+.course_pics{
+  float:left;
+  width: 100%;
+  height:100%;
+  object-fit: cover; 
+}
+
+.dijagram {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.kategorija {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.naslov {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  position: fixed;
+  min-height: 150px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  color: darkslategray;
+  font-size: smaller;
+  padding: 20px 0 20px 0;
+}
+
+.footer-lista {
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left: 1px solid darkslategray;
+}
+
+@media only screen and (max-width: 768px) {
+  #navigacija {
+    display: none;
+  }
+
+  .kursevi {
+    width: 100%;
+
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  .kursevi > div {
+    min-width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .kursevi > div {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+

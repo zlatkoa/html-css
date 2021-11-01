@@ -207,7 +207,8 @@ button:hover{
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
-        width: 30%;    
+        width: 30%;
+        transition: width 300ms;    
     }
     .person-social{
         display: flex;
@@ -215,6 +216,7 @@ button:hover{
         justify-content: center;
         flex-direction: column; 
         width:70%;
+        transition: width 300ms;
     }
     .container{
         width:1200px;
